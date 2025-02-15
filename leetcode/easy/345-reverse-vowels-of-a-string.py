@@ -75,6 +75,21 @@ class Solution:
 
         return ('').join(result)
 
+### solution#2
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        q = []
+        result = ""
+        for each in s:
+            if each in "aeiouAEIOU":
+                q.append(each)
+        for each in s:
+            if each in "aeiouAEIOU":
+                result += q.pop()
+            else:
+                result += each
+        return result
+
 if __name__ == "__main__":
     app = Solution()
     a = "hello"
