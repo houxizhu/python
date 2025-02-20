@@ -11,8 +11,8 @@ from collections import defaultdict
 import sys
 
 
-def codechef(self, head: Optional[ListNode]) -> List[int]:
-    ll = len(nums)
+def codechef(n: int, arr: list):
+    ll = len(arr)
     result = 0
 
     for ii in range(ll):
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     for _ in range(t):
         n = int(input())
         a = list(map(int, input().split()))
-        print(codeforces(n, a))
+        print(codechef(n, a))
 
     # t = int(sys.stdin.readline().strip())
     # for _ in range(t):
