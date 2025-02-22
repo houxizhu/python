@@ -10,7 +10,7 @@ from typing import List
 from collections import defaultdict
 import sys
 
-def atcoder(n: int, arr: []):
+def atcoder(n: int, arr: list):
     ll = len(arr)
     result = 0
 
@@ -25,4 +25,4 @@ if __name__ == "__main__":
   for _ in range(t):
     n = int(input())
     arr = list(map(int, input().split()))
-    print(atcoder(n,q))
+    print(atcoder(n,arr))
