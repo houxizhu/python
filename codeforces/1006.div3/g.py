@@ -10,7 +10,7 @@ from typing import List
 from collections import defaultdict
 import sys
 
-def codeforces(self, arr: list):
+def codeforces(self, head: Optional[ListNode]) -> List[int]:
     ll = len(nums)
     result = 0
 
