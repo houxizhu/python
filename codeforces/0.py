@@ -10,14 +10,7 @@ from typing import List
 from collections import defaultdict
 import sys
 
-def codeforces(self, arr: list):
-    ll = len(nums)
-    result = 0
-
-    for ii in range(ll):
-        pass
-
-    return result
+def codeforces(n: int, arr: list):
 
 if __name__ ==  "__main__":
     t = int(input())
