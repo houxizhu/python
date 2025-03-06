@@ -37,6 +37,15 @@ class ListNode:
 
 class Solution:
     def leetcode(self, haystack: str, needle: str) -> int:
+        result = -1
+        ll = len(haystack)
+        lln = len(needle)
+        for ii in range(ll-lln+1):
+            if haystack[ii:ii+lln] == needle:
+                return ii
+        return result
+    
+        ### 2
         return haystack.find(needle)
 
 if __name__ == "__main__":
