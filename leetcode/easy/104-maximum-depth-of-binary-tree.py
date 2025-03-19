@@ -40,7 +40,7 @@ class TreeNode:
 class Solution:
     def leetcode(self, root: Optional[TreeNode]) -> bool:
         if root == None:
-            return True
+            return 0
 
         q = [[root,0]]
         result = 0
