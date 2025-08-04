@@ -59,7 +59,7 @@ class Solution:
                 maxodd = max(maxodd, dd[each])
                 minodd = max(minodd, dd[each])
 
-        return maxodd-mineven©leetcode
+        return maxodd-mineven
 
 if __name__ == "__main__":
     app = Solution()

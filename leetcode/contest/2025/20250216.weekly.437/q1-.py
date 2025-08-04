@@ -51,10 +51,18 @@ from collections import defaultdict
 
 class Solution:
     def leetcode(self, nums: List[int]) -> int:
-        ll = len(nums)
-        result = 0
+        ll = len(s)
+        s = "0"+s+"0"
+        count = 0
+        for ii in range(1,ll+2):
+            if s[ii] == s[ii-1]:
+                count += 1
+            else:
+                if count == k:
+                    return True
+                count = 1
 
-        return result
+        return False
 
 if __name__ == "__main__":
     app = Solution()
