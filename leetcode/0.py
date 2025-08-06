@@ -14,7 +14,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def leetcode(self, head: Optional[ListNode]) -> List[int]:
+    def leetcode(self, nums: List[int]) -> List[int]:
         ll = len(nums)
         result = 0
 
