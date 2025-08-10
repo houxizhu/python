@@ -55,7 +55,7 @@ class Solution:
             llp = len(p)
             #print(p,n.val)
             for ii in range(llp-1,-1,-1):
-                if add == sum:
+                if add == targetSum:
                     #print(p,n.val)
                     ans += 1
                 add += p[ii]
