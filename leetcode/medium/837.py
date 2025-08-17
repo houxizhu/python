@@ -51,14 +51,26 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def leetcode(self, nums: List[int]) -> List[int]:
-        ll = len(nums)
-        result = 0
+    def leetcode(self, n: int, k: int, maxPts: int) -> float:
+        if k == 0:
+            return 1
+        if n >= k+maxPts:
+            return 1
+            
+        dp = [0.0]*(n+1)
+        dp[0] = 1
+        pre_sum = 0
+        for ii in range(1, n+1):
+            #print(ii,dp,pre_sum)
+            if ii-1 < k:
+                pre_sum += dp[ii-1]
+            if ii-maxPts-1 >= 0:
+                pre_sum -= dp[ii-maxPts-1]
+            dp[ii] += pre_sum/maxPts
 
-        for ii in range(ll):
-            pass
-
-        return result
+        #print(dp)
+            
+        return sum(dp[k:n+1])
 
 
 if __name__ == "__main__":
