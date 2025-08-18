@@ -42,12 +42,12 @@ class ListNode:
 class Solution:
     def leetcode(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         
-        while list1:
-            print(list1.val)
-            list1 = list1.next
-        while list2:
-            print(list2.val)
-            list2 = list2.next
+#        while list1:
+#            print(list1.val)
+#            list1 = list1.next
+#        while list2:
+#            print(list2.val)
+#            list2 = list2.next
 
         if list1 == None:
             return list2
