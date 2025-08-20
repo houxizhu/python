@@ -57,6 +57,33 @@ class Solution:
             if qq == None:
                 return False
 
+            pi = pq.pop(0)
+            qi = qq.pop(0)
+            if qi.val != pi.val:
+                return False
+            if pi.left:
+                pq.append(pi.left)
+                if qi.left :
+                    qq.append(qi.left)
+                else:
+                    return False
+            else:
+                if qi.left :
+                    return False
+
+            if pi.right:
+                pq.append(pi.right)
+                if qi.right:
+                    qq.append(qi.right)
+                else:
+                    return False
+            else:
+                if qi.right:
+                    return False
+
+
+        return True
+
 if __name__ == "__main__":
     app = Solution()
     a = [1,null,2,3]
