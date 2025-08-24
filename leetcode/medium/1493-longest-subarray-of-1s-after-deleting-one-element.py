@@ -47,6 +47,32 @@ class ListNode:
 
 class Solution:
     def leetcode(self, nums: List[int]) -> int:
+        ### 24 Aug 2025
+        ll = len(nums)
+        if sum(nums) == 0:
+            return 0
+        if sum(nums) == ll:
+            return ll-1
+        if sum(nums) == ll-1:
+            return ll-1
+
+        nums = [0]+nums+[0]
+        ll += 2
+        count1 = 0
+        result = 0
+        count_0_1 = 0
+        for ii in range(1, ll):
+            if nums[ii] == 1:
+                count1 += 1
+            else:
+                #print(ii, result, count1, count_0_1)
+                result = max(result, count1+count_0_1)
+                count_0_1 = count1
+                count1 = 0
+        
+        return result
+
+        ### 2Mar2025
         ll = len(nums)
 
         if ll == sum(nums):
